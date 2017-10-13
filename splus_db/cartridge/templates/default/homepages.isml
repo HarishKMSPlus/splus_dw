@@ -1,0 +1,20 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<iscache type="relative" hour="24"/>
+
+<link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
+<link href="${URLUtils.staticURL('/lib/footer.css')}" type="text/css" rel="stylesheet"/>
+
+<div class="container">
+    <div class="header">
+	<isinclude template="header" />
+	</div>
+	<div class="body">
+    <isinclude template="middleContent"/>
+    </div>
+    <div class="footer">
+    	<isinclude template="footer" />
+	</div>
+</div>
+
+
+

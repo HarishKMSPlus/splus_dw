@@ -1,0 +1,276 @@
+/*.container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}*/
+.mainbody,
+.header,
+.footer {
+    padding: 5px;
+}
+.mainbody {
+    margin-top: 0;
+    min-height: 150px;
+    max-height: 388px;
+    overflow: auto;
+}
+.header {
+    border-bottom: 1px solid #EEE;
+    background-color: #ffffff;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.footer {
+    background-color: whiteSmoke;
+    border-top: 1px solid #DDD;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bgFooter
+{
+background-repeat:no-repeat;
+background-image: url("/images/headerbg.png");
+position:relative;
+height:25%;
+}
+.contactus
+{
+width : 70px;
+height: 60px;
+position:absolute;
+top:20;
+left:1340;
+color: red;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.bg
+{
+background-repeat:no-repeat;
+background-image: url("headerbg.png");
+border-bottom: 3px solid black;
+position:relative;
+}
+input
+{
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-size:20;
+color:white;
+text-align:center;
+}
+.SearchBox
+{
+background-color: #999999;
+border: 1px solid #d3d3d3;
+height:50px;
+width:250px;
+border-radius:  15px;
+position:absolute;
+left:610px;
+top:95px;
+
+
+}
+a{
+text-decoration:none;
+color:#FFFFFF;
+}
+
+a:hover { 
+font-size: 18px;
+}
+
+
+.nav1
+{
+background-color:black;
+border: 2px solid #000000;
+border-radius:  4px;
+height:50px;
+width:100;
+position:relative;
+top:17;
+left:2;
+filter:drop-shadow(0px 5px 8px  #000011);
+display:inline-block;
+text-align: center;
+vertical-align: middle;
+line-height: 45px;
+
+} 
+
+.navtext
+{
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#FFFFFF;
+    font-size: 11px;
+}
+
+.navImg
+{
+width : 60px;
+height: 60px;
+margin: 30px 0px 0px 40px;
+
+}
+
+.findstore
+{
+width : 30px;
+height: 40px;
+position:absolute;
+top:20;
+left:1020;
+}
+.profile
+{
+width : 30px;
+height: 40px;
+position:absolute;
+top:20;
+left:1100;
+}
+
+.myCart
+{
+width : 30px;
+height: 30px;
+position:absolute;
+top:28;
+left:1180;
+}
+
+.contactus
+{
+width : 30px;
+height: 40px;
+position:absolute;
+top:20;
+left:1270;
+}
+
+.nav2
+{
+background-color:black;
+height:30px;
+width:80px;
+position:relative;
+bottom: 65;
+left:995;
+display:inline-block;
+text-align: center;
+vertical-align: middle;
+} 
+.hukum
+{
+background-color:black;
+border: 2px solid #000000;
+border-radius:  4px;
+height:50px;
+width:220px;
+position:absolute;
+top:25px;
+left:623px;
+filter:drop-shadow(0px 5px 8px #000011);
+
+}
+.hukumtest
+{
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-weight: bold;
+margin:12px 0px 15px 35px;
+font-size: 15px;
+color:#FFFFFF;
+}
+
+.gene
+{
+height:130px;
+width:80px;
+position:absolute;
+left:880px;
+top:25px;
+}
+.dd{
+	color:#FFFFFF;
+}
+
+.prodImg{
+text-align:left;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+position:relative;
+left:100px;
+}
+
+.prodDetail{
+text-align:left;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+position:relative;
+top:-200px;
+left:350px;
+	
+}
+
+.apiDetail{
+
+text-align:left;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+position:relative;
+top:-400px;
+left:600px;
+	
+	
+}
+
+.lsbutton{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.customBody{
+	
+    max-width: 100%;
+}
+ background: linear-gradient( #999999 95% , #FFFFFF);
+
+height:130px;

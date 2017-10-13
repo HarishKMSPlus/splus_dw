@@ -1,0 +1,13 @@
+<!--- TEMPLATENAME: test.isml --->
+Manas this is test
+
+<h1>The product name is ${pdict.Product.name}</h1>
+
+<isslot id="header_banner" description="SPlus header banner"
+context="global"/>
+
+<isset name="product" value="${pdict.Product}"
+scope="pdict"/>
+
+
+<h1>My test message ${pdict.message}</h1>

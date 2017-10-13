@@ -1,0 +1,230 @@
+/*.bgFooter
+{
+background-repeat:no-repeat;
+background-image: url("headerbg.png");
+position:relative;
+height:120px;
+}
+
+.footerTitle1
+{
+display:inline;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+position:absolute;
+top:12px;
+font-weight:bold;
+position:absolute;
+
+}
+
+.footerTitle2
+{
+display:inline;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+position:absolute;
+top:12px;
+font-weight:bold;
+position:absolute;
+left:700px;
+}
+
+.footerTitle3
+{
+display:inline;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+position:absolute;
+top:15px;
+font-weight:bold;
+position:absolute;
+left:1200px;
+}
+
+a:hover
+{
+color:white;
+font-size:20px;
+
+
+}
+div{
+overflow-x: hidden; 
+overflow-y: auto;
+}
+
+.footerText
+{
+
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+color:#000000;
+font-weight:normal;
+}
+
+a
+{
+text-decoration:none;
+}
+
+.footerImg2
+{
+display:block;
+position:absolute;
+left:600px;
+top:12px;
+
+}
+.footerImg3
+{
+display:block;
+position:absolute;
+left:1100px;
+top:12px;
+
+}
+.footerImg4
+{
+display:block;
+position:absolute;
+left:1200px;
+top:40px;
+
+}*/
+
+.allcontent
+{
+ position:relative;
+ left:155px;
+
+}
+.allcontent1
+{
+ position:relative;
+ left:0px;
+
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.imageBox
+{
+width:1135px;
+height:300px;
+
+}
+.imageBox img {
+    width: 100%;
+    height: 100%;
+	}
+	
+.w3-display-left{position:absolute;top:25%;left:1%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:25%;right:20.5%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+
+
+.categ{
+width:365;
+height:330px;
+margin:1px;
+postion:relative;
+ -webkit-filter: opacity(30%); /* Safari 6.0 - 9.0 */
+    filter: opacity(30%);
+}
+
+html, body {
+    max-width: 100%;
+    overflow: auto;
+}
+
+
+
+.menText
+{
+
+text-align:center;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+position:absolute;
+top:420px;
+left:100px;
+}
+
+a
+{
+color:#000000;
+text-decoration:none;
+}
+
+.menText :hover
+{
+
+filter:drop-shadow(0px 5px 5px  #000000);
+
+}
+.womenText
+{
+text-align:center;
+
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+position:absolute;
+top:420px;
+left:450px;
+}
+
+
+.kidsText
+{
+text-align:center;
+
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+position:absolute;
+top:420px;
+left:780px;
+}
+
+.men_subcat{
+width:100%;
+display:inline;
+}
+
+.subcat{
+border:4px ridge grey;
+display:inline-block;
+padding:4px;
+margin:5px 0px 5px 0px;
+width:170px;
+}
+
+.subcat:hover
+{
+border:5px double black !important; 
+
+
+}
+
+.subcat_name{
+
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+color:#000000;
+text-align:center;
+font-weight:bold;
+font-size:20px;
+border-bottom: 2px groove grey;
+}
+img
+{
+width:170px;
+height:250px;
+}

@@ -1,0 +1,101 @@
+.footer {
+	position:relative;
+}
+.footer .bgFooter
+{
+background-repeat:no-repeat;
+background-image: url("headerbg.png");
+position:relative;
+height:120px;
+}
+
+.footer .footerTitle1
+{
+display:inline;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+position:absolute;
+top:12px;
+font-weight:bold;
+position:absolute;
+
+}
+
+.footer .footerTitle2
+{
+display:inline;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+position:absolute;
+top:12px;
+font-weight:bold;
+position:absolute;
+left:700px;
+}
+
+.footer .footerTitle3
+{
+display:inline;
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+position:absolute;
+top:15px;
+font-weight:bold;
+position:absolute;
+left:1200px;
+}
+
+.footer a:hover
+{
+color:white;
+font-size:20px;
+
+
+}
+.footer div{
+overflow-x: hidden; 
+overflow-y: auto;
+}
+
+.footer .footerText
+{
+
+font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+color:#000000;
+font-weight:normal;
+}
+
+.footer a
+{
+text-decoration:none;
+}
+
+.footer .footerImg2
+{
+display:block;
+position:absolute;
+left:600px;
+top:12px;
+
+}
+.footer .footerImg3
+{
+display:block;
+position:absolute;
+left:1100px;
+top:12px;
+
+}
+.footer .footerImg4
+{
+display:block;
+position:absolute;
+left:1200px;
+top:40px;
+}
+.footer .footerImg4 img{
+	height:auto;
+	width:auto;
+}
+.footer .footerImg{
+	width:90px;
+	height:90px;
+}

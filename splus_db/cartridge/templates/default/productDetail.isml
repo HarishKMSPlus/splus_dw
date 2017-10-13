@@ -1,0 +1,38 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<iscache type="relative" hour="24"/>
+<link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
+<link href="${URLUtils.staticURL('/lib/footer.css')}" type="text/css" rel="stylesheet"/>
+<style>
+form {display: inline-block;}
+</style>
+  <div class="header">
+	<isinclude template="header" />
+  </div>
+  	<div class="customBody">
+  		<div class="prodImg">
+			<img src="/on/demandware.static/-/Sites-apparel-catalog/default/dw8b3c44e7/images/medium/PG.10123215.JJV61XX.PZ.jpg" alt="Platinum Blue Stripes Easy Care Fitted Shirt , White, medium" class="product-image main-image"/><br>
+  		</div>
+  		
+  		<div class="prodDetail">
+  		
+  				<p>Prod id   : S001</p>
+				<p>Prod Name : Cotton Shirt</p>
+				<p>Prod Size : 10 X 20</p>
+				<p>Prod loc  : Pune</p>
+				<table><tr><td>
+				<button class="lsbutton">ADD TO CART</button>
+				<form action="${URLUtils.continueURL()}" method="post" id="${pdict.CurrentForms.product.showinstore.dynamicHtmlName}">
+					<button class="lsbutton" type="submit" name="${pdict.CurrentForms.product.showinstore.htmlName}">LOCATE STORE</button>
+				</form></td></tr></table>
+		</div>
+		<div class="apiDetail">
+			<select>
+					<option value="${pdict.message}">select</option>
+					<option value="${pdict.message}">api</option>
+				    <option value="${pdict.message}">${pdict.message}</option>
+			</select>
+		</div>
+	</div>
+    <div class="footer">
+    	<isinclude template="footer" />
+	</div>

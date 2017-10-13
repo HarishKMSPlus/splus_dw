@@ -1,0 +1,64 @@
+<link  href="${URLUtils.staticURL('/lib/women.css')}" type="text/css" rel="stylesheet"/>
+
+<div class="allcontent scrollbar" id="style-2">
+<div class="midcontent">
+
+<div class="imageBox ">
+	<img class="mySlides" src="${URLUtils.staticURL('/images/yellow.jpg')}">
+	<img class="mySlides" src="${URLUtils.staticURL('/images/suit.jpg')}">
+	<img class="mySlides" src="${URLUtils.staticURL('/images/3.jpg')}">
+	
+	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<img class="categ " src="${URLUtils.staticURL('/images/mencat.png')}">
+<img class="categ " src="${URLUtils.staticURL('/images/womencat.jpg')}"/>
+<img class="categ " src="${URLUtils.staticURL('/images/kidscat.jpg')}"/>
+
+
+<div class="menText a">
+<a href="Men.html" target="Content">
+<b><u>MEN</u></b></br> </a>
+Special Offers </br>
+New Arrival </br>
+Customize (Dress well or die trying) 
+</div>
+
+<div class="womenText a">
+<a href="Women.html" target="Content">
+<b><u>WOMEN</u></b></br> <a/>
+Special Offers </br>
+New Arrival </br>
+Customize (Wear what you want) 
+</div>
+
+<div class="kidsText">
+<b><u>KIDS</u></b></br>
+Special Offers </br>
+New Arrival </br>
+Customize (Combine your thoughts with colors) 
+</div>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>

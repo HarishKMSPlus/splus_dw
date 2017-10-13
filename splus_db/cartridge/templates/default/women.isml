@@ -1,0 +1,88 @@
+<div class="header">
+	<isinclude template="header" />
+	</div>
+
+<link  href="${URLUtils.staticURL('/lib/women.css')}" type="text/css" rel="stylesheet"/>
+
+<div class="allcontent scrollbar" id="style-2">
+<div class="midcontent">
+
+<div class="imageBox ">
+    <img src="${URLUtils.staticURL('/images/women2.jpg')}" class="mySlides">
+     <img src="${URLUtils.staticURL('/images/women1.jpg')}" class="mySlides">
+	
+	
+	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<div class="men_subcat">
+
+<div class="subcat ">
+<div class="subcat_name">Shirts</div>
+<a class="thumb-link" href="${URLUtils.https('SplusHome-SampleProduct')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}">
+<img src="/on/demandware.static/-/Sites-apparel-catalog/default/dw8b3c44e7/images/medium/PG.10123215.JJV61XX.PZ.jpg" alt="Platinum Blue Stripes Easy Care Fitted Shirt , White, medium"/>
+</div>
+
+
+
+<div class="subcat">
+<div class="subcat_name">Jeans</div>
+<img src="${URLUtils.staticURL('/images/wjeans.jpg')}"/>
+</div>
+
+
+<div class="subcat ">
+<div class="subcat_name">Shirts</div>
+<img src="${URLUtils.staticURL('/images/wshirt.jpg')}"/>
+</div>
+
+
+<div class="subcat">
+<div class="subcat_name">Jeans</div>
+<img src="${URLUtils.staticURL('/images/wjeans.jpg')}"/>
+</div>
+
+<div class="subcat ">
+<div class="subcat_name">Shirts</div>
+<img src="${URLUtils.staticURL('/images/wshirt.jpg')}"/>
+</div>
+
+<div class="subcat">
+<div class="subcat_name">Jeans</div>
+<img src="${URLUtils.staticURL('/images/wjeans.jpg')}"/>
+</div>
+
+</div>
+
+<!-- end Mid content and all content -->
+</div>
+</div>
+<!-- end Mid content and all content -->
+
+<!-- Content ends, Footer starts -->
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+   <div class="footer">
+    	<isinclude template="footer" />
+	</div>

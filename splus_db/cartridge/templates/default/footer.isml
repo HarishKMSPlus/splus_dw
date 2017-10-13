@@ -1,0 +1,31 @@
+
+<link href="${URLUtils.staticURL('/lib/footer.css')}" type="text/css" rel="stylesheet"/>
+<img src="${URLUtils.staticURL('/images/question.png')}" class="footerImg" width="90" height="90"/>
+<div class="footerTitle1">
+NEED HELP? <br>
+<a href="Help.html" class="footerText"> Help Center </a> </br>
+<a href="FAQ.html" class="footerText"> FAQs </a> </br>
+<a href="SUtoWear.html" class="footerText"> Sign Up To Wear Test </a> </br>
+</div>
+<div class="footerImg2">
+<img src="${URLUtils.staticURL('/images/orders.png')}" class="footerImg" width="90" height="90"/>
+</div>
+<div class="footerTitle2">
+	ORDERS <br>
+	<a href="TrackOrder.html" class="footerText"> Track My Order </a> </br>
+	<a href="ShipInfo.html" class="footerText"> Shipping Information </a></br>
+	<a href="Returns.html" class="footerText"> Returns</a></br>
+	<a href="Wishlist.html" class="footerText"> Wishlist</a></br>
+</div>
+
+<div class="footerImg3">
+<img src="${URLUtils.staticURL('/images/havan.png')}" class="footerImg" width="90" height="90"/>
+	
+</div>
+<div class="footerTitle3">
+	STAY CONNECTED <br>
+</div>
+<div class="footerImg4">
+<img src="${URLUtils.staticURL('/images/socialnw.png')}"/>
+</div>
+

@@ -1,0 +1,78 @@
+
+<link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
+<div class="bg" id="content" >
+	<div class="nav1">
+		<a href="${URLUtils.https('SplusHome-Show')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}"><div class="navtext">	
+		  HOME 
+		</div></a>
+	</div>
+	
+	<div class="nav1">
+		<a href="${URLUtils.https('SplusHome-Women')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}"><div class="navtext">
+		WOMEN</div></a>
+		</div>
+	
+	<div class="nav1">
+	<a href="${URLUtils.https('SplusHome-Men')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}"><div class="navtext">		
+		    MEN
+		</div></a>
+	</div>
+	<div class="nav1">
+		<div class="navtext">
+		    KIDS
+		</div>
+	</div>
+	<div class="nav1">
+		<a href="Offer.html" target="Content"><div class="navtext">
+		    OFFERS
+		</div></a>
+	</div>
+	
+	
+	<div class="navIcons">
+	<img src="${URLUtils.staticURL('/images/home.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/womenIcon.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/menIcon.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/childrenIcon.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/offer.png')}" class="navImg"/>
+	</div>
+	
+	<div class="hukum">
+	<div class="hukumtest"><a href="SearchProd.html" target="Content"><div class="dd">Hukum Mere Aaka</div></a></div>
+	</div>
+	<img  class="gene" src="${URLUtils.staticURL('/images/genie.png')}"/>
+
+	<img  class="findstore" src="${URLUtils.staticURL('/images/findstore.png')}"/>
+	<img  class="profile" src="${URLUtils.staticURL('/images/profile.png')}"/>
+	<img  class="myCart" src="${URLUtils.staticURL('/images/myCart.png')}"/>
+	<img  class="contactus" src="${URLUtils.staticURL('/images/contactus.gif')}"/>
+	<input class="SearchBox" type="text" value="SEARCH"?/>
+
+
+	<div class="nav2">
+	
+		<div class="navtext">
+			FIND A STORE
+		</div>
+	</div>
+	<div class="nav2 dropdown">
+		<div class="navtext ">
+			PROFILE
+		</div>
+		<div class="dropdown-content">
+			<a href="LogIn.html" target="Content">Log In</a>
+			<a>-or-</a>
+			<a href="SignUp.html" target="Content">Sign Up</a>
+		</div>
+	</div>
+		<div class="nav2">
+		<div class="navtext">
+			MY CART
+		</div>
+	</div>
+		<div class="nav2">
+		<div class="navtext">
+			CONTACT US
+		</div>
+	</div>
+</div>
