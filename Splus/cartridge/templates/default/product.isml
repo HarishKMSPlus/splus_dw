@@ -1,0 +1,32 @@
+<!--- TEMPLATENAME: product.isml --->
+
+<h1>The product name is: ${pdict.Product.name} (${pdict.Product.ID})</h1>
+
+<isslot id="header_banner" description="SPlus header banner"
+context="global"/>
+
+<isset name="product" value="${pdict.Product}"
+scope="pdict"/>
+
+<isif condition="${pdict.Product.online}">
+<H1><font color="white">Product is online</font></H1>
+<iselse>
+Product is offline
+</isif>
+
+<isinclude template="product/producttile"/> <br>
+
+
+<form action="${URLUtils.continueURL()}" method="post" id="${pdict.CurrentForms.product.showinstore.dynamicHtmlName}" >
+
+	<input class="show in store" type="submit" value="Show in Store" name="${pdict.CurrentForms.product.showinstore.htmlName}"/>
+  
+</form>
+
+
+
+
+
+
+
+

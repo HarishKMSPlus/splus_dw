@@ -1,0 +1,9 @@
+<!--- TEMPLATENAME: entry.isml --->
+<isinclude template="content/myhome"/>
+Mans
+
+<form action="${URLUtils.continueURL()}" method="post" id="${pdict.CurrentForms.product.showinstore.dynamicHtmlName}" >
+
+	<input class="show in store" type="submit" value="Show in Store" name="${pdict.CurrentForms.product.showinstore.htmlName}"/>
+  
+</form>
