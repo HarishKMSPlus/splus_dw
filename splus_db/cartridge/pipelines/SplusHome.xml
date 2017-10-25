@@ -33,10 +33,23 @@
         </transition-display>
       </simple-transition>
       <node>
+        <pipelet-node pipelet-name="GetCategory" pipelet-set-identifier="bc_api">
+          <key-binding alias="CurrentHttpParameterMap.category.stringValue" key="CategoryID"/>
+          <key-binding alias="Category" key="Category"/>
+        </pipelet-node>
+        <node-display x="0" y="1"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="source" x="0" y="1"/>
+          <bend-point relative-to="target" x="0" y="-1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
         <interaction-node transaction-required="false">
           <template buffered="true" dynamic="false" name="men"/>
         </interaction-node>
-        <node-display x="0" y="1"/>
+        <node-display x="-1" y="1"/>
       </node>
     </segment>
   </branch>
