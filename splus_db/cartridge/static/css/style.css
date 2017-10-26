@@ -20,11 +20,11 @@
     display: inline-block;
 }
 .primary-logo {
-	height: 38px; // height of image
+	height: 10px; // height of image
 	padding: .1em 0 0 0;
 	margin: 0 auto;
 	color:red;
-	width: 200px; // width of image
+	width: 50px; // width of image
 	z-index: 1;
 	@media screen and (min-width: 768px) {
 		margin: 0;

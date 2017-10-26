@@ -1,0 +1,156 @@
+
+<link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
+<isscript>
+	importScript( "splusutil/ViewHelpers.ds" );
+</isscript>
+<script>
+
+function test() {
+alert("hello");
+}
+</script>
+
+<div class="bg" id="content" >
+<isset name="topLevelCategory" value="${getTopLevelCategory()}" scope="page"/>
+<isif condition="${topLevelCategory != null}">
+<!-- manas${topLevelCategory.getDisplayName()}:${topLevelCategory.getID()}:
+  ${getSubcategoriesInMenuForCategory(topLevelCategory)}
+ -->
+	<ul class="menu-category level-1">
+	<iscomment><!-- Use two loops because the demo catalog has too many nested categories --></iscomment>
+	<isloop items="${getSubcategoriesInMenuForCategory(topLevelCategory)}" var="topCat">
+			
+			<i class="menu-item-toggle fa fa-chevron-right"></i>
+			<isset name="topLevelClass" value="${''}" scope="page"/>
+			<isif condition="${getSubCategoriesLayout(topCat).hasContent}">
+				<isset name="topLevelClass" value="has-sub-menu" scope="page"/>
+			</isif>
+				<div class="nav1">
+				
+				<a class="${topLevelClass}" style="color: white;size: 10px;" onclick="test(${topCat.getDisplayName()})" href="<isprint value="${getCategoryUrl(topCat)}" encoding="off"/>">
+					<isprint value="${topCat.getDisplayName()}"/>
+				</a>
+				</div>
+			
+			${getCategoryUrl(topCat)}	
+					
+		<isset name="topCat" value="${topCat}" scope="page"/>
+		<isset name="subCatLayout" value="${getSubCategoriesLayout(topCat)}" scope="page"/>
+		<isif condition="${subCatLayout.hasContent}">
+			<div class="level-2">
+				<ul class="${subCatLayout.horizontal ? 'menu-horizontal' : 'menu-vertical'}">
+					<isloop items="${subCatLayout.subCategories}" var="subCat" status="stat">
+						<isif condition="${stat.index <= subCatLayout.maxColLength -1}">
+							<li>
+								<a href="<isprint value="${getCategoryUrl(subCat)}" encoding="off"/>">
+									<isprint value="${subCat.getDisplayName()}"/>
+								</a>
+								<isset name="thirdLevelCategories" value="${getSubcategoriesInMenuForCategory(subCat)}" scope="page"/>
+								<isif condition="${thirdLevelCategories.length > 0}">
+									<ul class="level-3">
+										<isloop items="${thirdLevelCategories}" var="thirdLevelCat">
+											<isif condition="${('showInMenu' in thirdLevelCat.custom) && thirdLevelCat.custom.showInMenu.valueOf()}">
+												<li>
+													<a href="<isprint value="${getCategoryUrl(thirdLevelCat)}" encoding="off"/>">
+														<isprint value="${thirdLevelCat.getDisplayName()}"/>
+													</a>
+												</li>
+											</isif>
+										</isloop>
+									</ul>
+								</isif>
+							</li>
+						</isif>
+					</isloop>
+				</ul>
+				<!-- <isif condition="${subCatLayout.banner}">
+					<div class="banner"><isprint value="${subCatLayout.banner}" encoding="off"/></div>
+				</isif> -->
+			</div>
+		</isif>
+					<iscategoryflyout category="${topCat}"/>
+			</isloop>
+			</ul>
+		</isif>
+
+
+
+
+
+<!-- 
+
+	<div class="nav1">
+		<a href="${URLUtils.https('SplusHome-Show')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}"><div class="navtext">	
+		  HOME 
+		</div></a>
+	</div>
+	
+	<div class="nav1">
+		<a href="${URLUtils.https('SplusHome-Women')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}"><div class="navtext">
+		WOMEN</div></a>
+		</div>
+	
+	<div class="nav1">
+	<a href="${URLUtils.https('SplusHome-Men')}" title="${Resource.msg('account.orderdetails.returnorder','account',null)}"><div class="navtext">		
+		    MEN
+		</div></a>
+	</div>
+	<div class="nav1">
+		<div class="navtext">
+		    KIDS
+		</div>
+	</div>
+	<div class="nav1">
+		<a href="Offer.html" target="Content"><div class="navtext">
+		    OFFERS
+		</div></a>
+	</div>
+	
+	 -->
+	<div class="navIcons">
+	<img src="${URLUtils.staticURL('/images/home.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/womenIcon.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/menIcon.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/childrenIcon.png')}" class="navImg"/>
+	<img src="${URLUtils.staticURL('/images/offer.png')}" class="navImg"/>
+	</div>
+	
+	<div class="hukum">
+	<div class="hukumtest"><a href="SearchProd.html" target="Content"><div class="dd">Hukum Mere Aaka</div></a></div>
+	</div>
+	<img  class="gene" src="${URLUtils.staticURL('/images/genie.png')}"/>
+
+	<img  class="findstore" src="${URLUtils.staticURL('/images/findstore.png')}"/>
+	<img  class="profile" src="${URLUtils.staticURL('/images/profile.png')}"/>
+	<img  class="myCart" src="${URLUtils.staticURL('/images/myCart.png')}"/>
+	<img  class="contactus" src="${URLUtils.staticURL('/images/contactus.gif')}"/>
+	<input class="SearchBox" type="text" value="SEARCH"?/>
+
+
+	<div class="nav2">
+	
+		<div class="navtext">
+			FIND A STORE
+		</div>
+	</div>
+	<div class="nav2 dropdown">
+		<div class="navtext ">
+			PROFILE
+		</div>
+		<div class="dropdown-content">
+			<a href="LogIn.html" target="Content">Log In</a>
+			<a>-or-</a>
+			<a href="SignUp.html" target="Content">Sign Up</a>
+		</div>
+	</div>
+		<div class="nav2">
+		<div class="navtext">
+			MY CART
+		</div>
+	</div>
+		<div class="nav2">
+		<div class="navtext">
+			CONTACT US
+		</div>
+	</div>
+</div>

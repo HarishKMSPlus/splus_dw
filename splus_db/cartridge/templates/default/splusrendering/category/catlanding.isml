@@ -1,0 +1,28 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<isdecorate template="splussearch/pt_categorylanding">
+
+	<iscache type="relative" minute="30" varyby="price_promotion"/>
+	
+	<isinclude template="splusutil/modules"/>
+	
+	<iscomment>
+		Configured as rendering template for the general category landing page.
+		Displays two category specific slots containing static html with promotional
+		banner in the first slot and either up to four featured products or promotional
+		content in the second slot.
+	</iscomment>
+	<div class="container">
+	
+	
+	<div id="secondary" class="refinements">
+		<isinclude template="splussearch/components/productsearchrefinebar"/>
+	</div>
+
+	
+    <div class="footer">
+    	<isinclude template="footer" />
+	</div>
+	</div>
+</isdecorate>
+	
+		
