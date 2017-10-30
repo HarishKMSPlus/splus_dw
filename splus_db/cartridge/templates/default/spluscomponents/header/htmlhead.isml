@@ -60,6 +60,8 @@ If you are not using the build cartridge the comments can be safely removed.
 
 <isinclude template="spluscomponents/header/htmlhead_UI"/>
 
+
+<link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" />
 <!--[if lte IE 8]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
 <script src="https://cdn.rawgit.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js" type="text/javascript"></script>
