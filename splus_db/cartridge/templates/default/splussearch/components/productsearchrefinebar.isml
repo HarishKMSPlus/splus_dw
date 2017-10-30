@@ -41,7 +41,7 @@
 		<isloop items="${Refinements.refinementDefinitions}" var="RefinementDefinition" status="refinementsLoopState">
 
 			<div class="refinement ${RefinementDefinition.attributeID}<isif condition="${RefinementDefinition.isCategoryRefinement()}"> category-refinement</isif>">
-			CATEGORY REFINEMENTS-SPlus
+		CATEGORY REFINEMENTS
 			<iscomment>CATEGORY REFINEMENTS</iscomment>
 			<isif condition="${RefinementDefinition.isCategoryRefinement()}">
 
@@ -57,7 +57,7 @@
 							(<a href="${pdict.ProductSearchResult.urlRelaxCategory('Search-Show')}">${Resource.msg('searchrefinebar.viewall','search',null)}</a>)
 						</div>
 					</isif>
-
+XXXX-->
 					<iscategoryrefinementvalues searchmodel="${pdict.ProductSearchResult}" category="${path.get(0)}" categorypath="${path}" categorylevel="1"/>
 
 				<iselse/>
@@ -72,7 +72,7 @@
 				</isif>
 
 			</isif>
-		ATTRIBUTE REFINEMENTS
+		
  		<iscomment>ATTRIBUTE REFINEMENTS</iscomment>
 		<isif condition="${RefinementDefinition.isAttributeRefinement()}">
 
@@ -86,7 +86,7 @@
 					<a title="${Resource.msg('search.productsearchrefinebar.showallopt','search',null)}" href="${pdict.ProductSearchResult.urlRelaxAttribute('Search-Show',RefinementDefinition.attributeID)}">${Resource.msg('searchrefinebar.clearselection','search',null)}</a>
 				</div>
 			</isif>
-				Special handling for color and size refinement selection
+				
 				<iscomment>Special handling for color and size refinement selection</iscomment>
 				<isif condition="${RefinementDefinition.attributeID.equals('refinementColor') || RefinementDefinition.attributeID.equals('size')}">
 

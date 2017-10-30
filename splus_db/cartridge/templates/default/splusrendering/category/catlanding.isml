@@ -12,16 +12,26 @@
 		content in the second slot.
 	</iscomment>
 	<div class="container">
+
+	<div id="primary" class="primary-content">	
+		<isslot id="cat-landing-slotbanner" context="category" description="Banner at the top of Category Landing Pages" context-object="${pdict.ProductSearchResult.category}"/>
+		
+	</div>
 	
-	
+**********************************************
 	<div id="secondary" class="refinements">
 		<isinclude template="splussearch/components/productsearchrefinebar"/>
 	</div>
 
-	
-    <div class="footer">
-    	<isinclude template="footer" />
+
+	<div class="secondary-content">
+		<isslot id="cat-landing-slotbottom" context="category" description="First slot below the Category Banner" context-object="${pdict.ProductSearchResult.category}"/>
+
+		<isslot id="cat-landing-slotbottom2" context="category" description="Second slot below the Category Banner" context-object="${pdict.ProductSearchResult.category}"/>
 	</div>
+
+*******************************************************
+    
 	</div>
 </isdecorate>
 	

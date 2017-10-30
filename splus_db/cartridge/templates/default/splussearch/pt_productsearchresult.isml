@@ -13,14 +13,13 @@
 			ns:'search'
 		};
 	</isscript>
-	<isinclude template="util/modules"/>
+	<isinclude template="splusutil/modules"/>
 	<iscomment>
 		Please mind that the productsearchrefinebar contains price information that is subject to personalization.
 		Make sure the decorated template specifies ISCACHE varyby="price_promotion".
 	</iscomment>
 
-	<isinclude template="components/header/htmlhead"/>
-	<isinclude template="search/pt_categorylanding_UI"/>
+	<isinclude template="spluscomponents/header/htmlhead"/>
 
 	<isif condition="${(pdict.CurrentHttpParameterMap.cgid.submitted && pdict.CurrentHttpParameterMap.cgid.value != '')}">
 		<link rel="canonical" href="${URLUtils.url('Search-Show','cgid', pdict.CurrentHttpParameterMap.cgid)}" />
@@ -31,21 +30,18 @@
 </head>
 <body>
 
+	<div id="wrapper" class="pt_product-search-result">
 
-	<div id="wrapper" class="pt_categorylanding">
-
-		<isinclude template="components/header/header"/>
+		<isinclude template="spluscomponents/header/header"/>
 
 		<div id="main" role="main" class="clearfix">
-			<isinclude template="components/browsertoolscheck"/>
-			<iscontent type="text/html" charset="UTF-8" compact="true"/>
-			
+			<isinclude template="spluscomponents/browsertoolscheck"/>
 			<isreplace/>
-	
 		</div>
 
-		<isinclude template="components/footer/footer"/>
-		<isinclude template="search/pt_categorylanding_VARS"/>
+		<isinclude template="spluscomponents/footer/footer"/>
+		<isinclude template="splussearch/pt_productsearchresult_UI"/>
+		<isinclude template="splussearch/pt_productsearchresult_VARS"/>
 	</div>
 </body>
 </html>

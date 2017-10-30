@@ -41,7 +41,8 @@
 		<isloop items="${Refinements.refinementDefinitions}" var="RefinementDefinition" status="refinementsLoopState">
 
 			<div class="refinement ${RefinementDefinition.attributeID}<isif condition="${RefinementDefinition.isCategoryRefinement()}"> category-refinement</isif>">
-
+			
+			CATEGORY REFINEMENTS
 			<iscomment>CATEGORY REFINEMENTS</iscomment>
 			<isif condition="${RefinementDefinition.isCategoryRefinement()}">
 
