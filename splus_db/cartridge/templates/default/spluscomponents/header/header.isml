@@ -1,33 +1,32 @@
 <iscontent type="text/html" charset="UTF-8" compact="true"/>
-
+<link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
 <iscomment>SLOT CONFIGURATION:  SLOT/ID: header-banner</iscomment>
 <div class="header-banner">
 	<isslot id="header-banner" description="Slot above the site header" context="global" />
 </div>
 <div class="top-banner" role="banner">
-	<button class="menu-toggle"><i class="menu-icon fa fa-bars"></i><span class="visually-hidden">Menu</span></button>
+<!-- 	<button class="menu-toggle"><i class="menu-icon fa fa-bars"></i><span class="visually-hidden">Menu</span></button>
 	<h1 class="primary-logo">
 		<a href="${URLUtils.url('Home-Show')}" title="${Resource.msgf('global.homepage.tooltip', 'locale', null, Resource.msg('global.storename', 'locale', null), Resource.msg('global.home', 'locale', null) )}">
 			<img src="${URLUtils.staticURL('/images/home.png')}" alt="Splus Commerce Cloud">
 			<span class="visually-hidden">Splus Commerce Cloud</span>
 		</a>
-	</h1>
+	</h1> -->
 
 	<nav id="navigation" role="navigation">
 
 		<div class="header-search">
+		
 			<isinclude template="splussearch/simplesearch"/>
 		</div>
-	INCLUDE: category menu
 		<iscomment>INCLUDE: category menu</iscomment>
 		<isinclude url="${URLUtils.url('Home-IncludeHeaderMenu')}"/>
 
 		<!--  utility user menu -->
 		<ul class="menu-utility-user">
 			
-			Store Locator
 			<iscomment>Store Locator</iscomment>
-			<li class="stores">
+			<li class="stores1">
 				<a href="${URLUtils.http('Stores-Find')}" title="${Resource.msg('global.header.storelocator.label', 'locale', null)}">
 					<i class="fa fa-map-marker"></i>
 					<span>${Resource.msg('global.header.storelocator', 'locale', null)}</span>

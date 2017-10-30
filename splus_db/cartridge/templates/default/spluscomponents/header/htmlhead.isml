@@ -3,8 +3,8 @@
 The <!—BEGIN/END… comments are control statements for the build cartridge which can be found in xChange https://xchange.demandware.com/docs/DOC-5728 or checked out from SVN at https://svn2.hosted-projects.com/cs_europe/DWTechRepository/cartridges/build_cs
 If you are not using the build cartridge the comments can be safely removed.
 </iscomment>
-
 <meta charset=UTF-8>
+<link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
 
 <iscomment>See https://github.com/h5bp/html5-boilerplate/blob/5.2.0/dist/doc/html.md#x-ua-compatible</iscomment>
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -59,9 +59,6 @@ If you are not using the build cartridge the comments can be safely removed.
 <iscomment>DEFAULT STYLESHEETS INCLUDED ON ALL PAGES</iscomment>
 
 <isinclude template="spluscomponents/header/htmlhead_UI"/>
-
-<!--  UI -->
-<link rel="stylesheet" href="${URLUtils.staticURL('/css/style1.css')}" />
 
 <!--[if lte IE 8]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
