@@ -37,9 +37,9 @@
 
 				
 				<div id="product-nav-container">
-					<isinclude template="splussearch/productnav"/>
+					<isinclude template="search/productnav"/>
 				</div> <!-- /product-nav-container -->
-
+ 
 				<isreplace/>
 			</div><!-- /primary-content -->
 

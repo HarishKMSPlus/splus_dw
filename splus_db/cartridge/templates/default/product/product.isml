@@ -15,7 +15,7 @@
 		DecoratorTemplate = 'util/pt_empty';
 	}
 </isscript>
- 
+
 <isdecorate template="${DecoratorTemplate}">
 	<isinclude url="${productDetailUrl}"/>
-</isdecorate>jb
+</isdecorate>
