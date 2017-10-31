@@ -145,7 +145,7 @@ top:95px;
 }
 a{
 text-decoration:none;
-color:#FFFFFF;
+color:#84bd00;
 }
 
 a:hover { 
@@ -335,7 +335,7 @@ nav[role="navigation"] {
         color: #000;
         left: auto;
         padding-bottom:15px;
-        margin-top: -4em;
+        margin-top: -6em;
         position: static;
         width: 100%;
     }
@@ -3521,7 +3521,7 @@ nav[role="navigation"] {
       color: #333;
       left: auto;
       padding-bottom:15px;
-      margin-top: -4em;
+      margin-top: -1em;
       position: static;
       width: 100%; } }
 

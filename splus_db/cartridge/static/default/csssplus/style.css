@@ -1770,10 +1770,10 @@ input[type="button"] {
   width: 100%; }
   @media screen and (min-width: 768px) {
     #wrapper {
-      width: 760px; } }
+      width: 100%; } }
   @media screen and (min-width: 960px) {
     #wrapper {
-      width: 960px; } }
+      width: 100%; } }
   #wrapper.pt_storefront, #wrapper.pt_order-confirmation {
     width: 100%; }
   #wrapper.pt_categorylanding {
@@ -1808,7 +1808,7 @@ input[type="button"] {
       margin-left: -1px;
       padding: 0 0 20px;
       position: relative;
-      width: 787px; }
+      width: 1000px; }
       .primary-focus .primary-content {
         border: none;
         float: left;
@@ -1828,7 +1828,7 @@ input[type="button"] {
       background: url("../images/interface/icon-double-line-header.png") repeat-x scroll left top transparent;
       border-right: 1px solid #e0e0e0;
       float: left;
-      width: 172px;
+      width: 270px;
       position: relative; }
       #secondary nav {
         padding-left: 10px;
@@ -2778,7 +2778,7 @@ nav[role="navigation"] {
     nav[role="navigation"] {
       color: #333;
       left: auto;
-      margin-top: -4em;
+      margin-top: -6em;
       position: static;
       width: 100%; } }
 
@@ -2870,7 +2870,7 @@ nav[role="navigation"] {
         .level-1 > li > a.has-sub-menu {
           width: 100%; }
         .level-1 > li > a:hover {
-          background-color: #608a00;
+          background-color: #000;
           color: #fff; } }
     @media screen and (min-width: 960px) {
       .level-1 > li > a {
@@ -3124,7 +3124,7 @@ nav[role="navigation"] {
 .top-banner {
   position: relative; }
   .top-banner * {
-    box-sizing: border-box; }
+    }
 
 .primary-logo {
   height: 38px;
