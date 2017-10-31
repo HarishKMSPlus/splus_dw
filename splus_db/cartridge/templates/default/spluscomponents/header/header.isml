@@ -19,6 +19,7 @@
 		
 			<isinclude template="splussearch/simplesearch"/>
 		</div>
+	
 		<iscomment>INCLUDE: category menu</iscomment>
 		<isinclude url="${URLUtils.url('Home-IncludeHeaderMenu')}"/>
 

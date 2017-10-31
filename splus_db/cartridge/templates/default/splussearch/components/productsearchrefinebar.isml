@@ -41,7 +41,7 @@
 		<isloop items="${Refinements.refinementDefinitions}" var="RefinementDefinition" status="refinementsLoopState">
 
 			<div class="refinement ${RefinementDefinition.attributeID}<isif condition="${RefinementDefinition.isCategoryRefinement()}"> category-refinement</isif>">
-		CATEGORY REFINEMENTS
+		
 			<iscomment>CATEGORY REFINEMENTS</iscomment>
 			<isif condition="${RefinementDefinition.isCategoryRefinement()}">
 
@@ -57,7 +57,7 @@
 							(<a href="${pdict.ProductSearchResult.urlRelaxCategory('Search-Show')}">${Resource.msg('searchrefinebar.viewall','search',null)}</a>)
 						</div>
 					</isif>
-XXXX-->
+
 					<iscategoryrefinementvalues searchmodel="${pdict.ProductSearchResult}" category="${path.get(0)}" categorypath="${path}" categorylevel="1"/>
 
 				<iselse/>

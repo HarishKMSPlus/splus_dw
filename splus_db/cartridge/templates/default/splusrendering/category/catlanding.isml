@@ -18,11 +18,9 @@
 		
 	</div>
 	
-**********************************************
 	<div id="secondary" class="refinements">
 		<isinclude template="splussearch/components/productsearchrefinebar"/>
 	</div>
-
 
 	<div class="secondary-content">
 		<isslot id="cat-landing-slotbottom" context="category" description="First slot below the Category Banner" context-object="${pdict.ProductSearchResult.category}"/>
@@ -30,7 +28,6 @@
 		<isslot id="cat-landing-slotbottom2" context="category" description="Second slot below the Category Banner" context-object="${pdict.ProductSearchResult.category}"/>
 	</div>
 
-*******************************************************
     
 	</div>
 </isdecorate>
