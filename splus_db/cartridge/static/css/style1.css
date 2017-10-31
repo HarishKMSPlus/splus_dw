@@ -2958,7 +2958,7 @@ nav[role="navigation"] {
     nav[role="navigation"] {
       color: #333;
       left: auto;
-      margin-top: -4em;
+      margin-top: -1em;
       position: static;
       width: 100%; } }
 
@@ -6735,7 +6735,7 @@ nav[role="navigation"] {
     nav[role="navigation"] {
         color: #333;
         left: auto;
-        margin-top: -4em;
+        margin-top: -1em;
         position: static;
         width: 100%;
     }

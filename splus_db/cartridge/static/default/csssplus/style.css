@@ -2819,7 +2819,7 @@ nav[role="navigation"] {
         .menu-category li:hover > a {
           background-color: transparent; } }
   .menu-category a {
-    color: #84bd00;
+    color: #fff;
     display: inline-block;
     font-size: .9rem;
     padding: .9rem 1rem;
@@ -2832,9 +2832,8 @@ nav[role="navigation"] {
     @media screen and (min-width: 960px) {
       .menu-category a {
         padding: 1em 2rem; } }
-
 .level-1 > li {
-  background-color: transparent; }
+  background-color: black; }
   .level-1 > li:first-child {
     border: none; }
   .level-1 > li .menu-item-toggle {
@@ -2951,7 +2950,7 @@ nav[role="navigation"] {
     .menu-utility-user {
       position: absolute;
       right: 9.7em;
-      top: .2em; } }
+      top: 3.5em; } }
   .menu-utility-user li {
     border-top: 1px solid #1a1a1a;
     list-style: none;
@@ -3187,7 +3186,6 @@ nav[role="navigation"] {
       color: #84bd00; }
     .header-search button i {
       font-size: 1.4em; }
-
 #mini-cart {
   position: absolute;
   right: 1.6em;
@@ -3196,7 +3194,7 @@ nav[role="navigation"] {
   @media screen and (min-width: 768px) {
     #mini-cart {
       right: 5.7em;
-      top: .5em; } }
+      top: 3.5em; } }
   #mini-cart .mini-cart-name a {
     color: #84bd00; }
 

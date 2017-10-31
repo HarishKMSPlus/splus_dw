@@ -176,13 +176,14 @@ font-size: 13px;
 font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 color:#FFFFFF;
     font-size: 11px;
+    
 }
 
 .navImg
 {
-width : 60px;
+width : 100px;
 height: 60px;
-margin: 30px 0px 0px 40px;
+margin: 30px 0px 10px 40px;
 
 }
 
@@ -380,13 +381,14 @@ nav[role="navigation"] {
     .menu-category li {
         border: none;
         float: left;
+            margin-left: 5px;
     }
     .menu-category li:hover > a {
         background-color: transparent;
     }
 }
 .menu-category a {
-    color: #84bd00;
+    color: #fff;
     display: inline-block;
     font-size: .9rem;
     padding: .9rem 1rem;
@@ -404,8 +406,9 @@ nav[role="navigation"] {
         padding: 1em 2rem;
     }
 }
+
 .level-1 > li {
-    background-color: transparent;
+    background-color: black;
 }
 .level-1 > li:first-child {
     border: none;
@@ -455,7 +458,7 @@ nav[role="navigation"] {
         width: 100%;
     }
     .level-1 > li > a:hover {
-        background-color: #608a00;
+        background-color: #000;
         color: #fff;
     }
 }
@@ -665,7 +668,7 @@ color:#FFFFFF;
 
 .navImg
 {
-width : 60px;
+width : 100px;
 height: 60px;
 margin: 30px 0px 0px 40px;
 
@@ -2447,7 +2450,7 @@ input[type="button"] {
     .button.raised:hover,
     .buttonstyle.raised:hover,
     input[type="button"].raised:hover {
-      background-color: #608a00;
+      background-color: #000;
       color: #fff; }
   button.simple, .store-tile.selected .select-store-button,
   .button.simple,
@@ -3613,7 +3616,8 @@ nav[role="navigation"] {
         .level-1 > li > a.has-sub-menu {
           width: 100%; }
         .level-1 > li > a:hover {
-          background-color: #608a00;
+          background-color: #000;
+          
           color: #fff; } }
     @media screen and (min-width: 960px) {
       .level-1 > li > a {
@@ -7313,6 +7317,7 @@ h1 .account-logout {
     -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0);
 } 
+
 .menu-utility-user {
   margin: 0;
   padding: 0; }
@@ -7320,7 +7325,7 @@ h1 .account-logout {
     .menu-utility-user {
       position: absolute;
       right: 9.7em;
-      top: .2em; } }
+      top: 3.5em; } }
   .menu-utility-user li {
     border-top: 1px solid #1a1a1a;
     list-style: none;
@@ -7429,7 +7434,7 @@ h1 .account-logout {
   @media screen and (min-width: 768px) {
     #mini-cart {
       right: 5.7em;
-      top: .5em; } }
+      top: 3.5em; } }
   #mini-cart .mini-cart-name a {
     color: #84bd00; }
 
@@ -7546,7 +7551,6 @@ h1 .account-logout {
     margin: 0 .5rem; }
   .mini-cart-subtotals .value {
     margin-right: .5rem; }
-
 .mini-cart-slot {
   background: none repeat scroll 0 0 #e0e0e0;
   border: 1px solid #e0e0e0;
@@ -7560,4 +7564,34 @@ h1 .account-logout {
   margin: 1em 0;
   text-align: center; }
         
-
+/* 
+.extraButtons {
+	position: relative;
+    top: -40px;
+    width: 147px;
+    height: 39px;
+    color: white;
+    background: black;
+    border-color: #000;
+    left: 1010px;
+}
+.extraButtons1 {
+	position: relative;
+    top: -40px;
+    width: 147px;
+    height: 39px;
+    color: white;
+    background: black;
+    border-color: #000;
+    left: 1010px;
+}
+.extraButtons2 {
+	position: relative;
+    top: -40px;
+    width: 147px;
+    height: 39px;
+    color: white;
+    background: black;
+    border-color: #000;
+    left: 1010px;
+} */

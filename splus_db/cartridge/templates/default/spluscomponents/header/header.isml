@@ -12,7 +12,7 @@
 			<span class="visually-hidden">Splus Commerce Cloud</span>
 		</a>
 	</h1> -->
-<img src="${URLUtils.staticURL('/images/home.png')}" class="navImg"/>
+<img src="${URLUtils.staticURL('/images/slogo.jpeg')}" class="navImg" />
 	<nav id="navigation" role="navigation">
 
 		<div class="header-search">
@@ -22,7 +22,6 @@
 	
 		<iscomment>INCLUDE: category menu</iscomment>
 		<isinclude url="${URLUtils.url('Home-IncludeHeaderMenu')}"/>
-
 		<!--  utility user menu -->
 		<ul class="menu-utility-user">
 			
@@ -36,7 +35,7 @@
 
 			<iscomment>INCLUDE: Customer login information, login, etc. (contains personal information, do not cache)</iscomment>
 			<isinclude url="${URLUtils.url('Home-IncludeHeaderCustomerInfo')}"/>
-
+			
 		</ul>
 
 		<iscomment>Country Selector</iscomment>

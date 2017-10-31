@@ -2,18 +2,14 @@
 <iscache type="relative" hour="24"/>
 
 <link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
-<link href="${URLUtils.staticURL('/lib/footer.css')}" type="text/css" rel="stylesheet"/>
 
-<div class="container">
-    <div class="header">
-	<isinclude template="header" />
-	</div>
-	<div class="body">
-    <isinclude template="middleContent"/>
-    </div>
-    <div class="footer">
-    	<isinclude template="footer" />
-	</div>
+
+    <isinclude template="spluscomponents/header/header"/>
+    <isinclude template="spluscomponents/header/htmlhead_UI"/>
+    <link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" type="text/css"/>
+ 			<isinclude template="middleContent"/>    
+    <isinclude template="spluscomponents/footer/footer"/>
+    
 </div>
 
 
