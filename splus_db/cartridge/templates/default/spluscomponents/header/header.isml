@@ -12,7 +12,7 @@
 			<span class="visually-hidden">Splus Commerce Cloud</span>
 		</a>
 	</h1> -->
-
+<img src="${URLUtils.staticURL('/images/home.png')}" class="navImg"/>
 	<nav id="navigation" role="navigation">
 
 		<div class="header-search">
