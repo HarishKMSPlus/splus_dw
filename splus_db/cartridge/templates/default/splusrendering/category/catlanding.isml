@@ -18,6 +18,7 @@
 		
 	</div>
 	
+	
 	<div id="secondary" class="refinements">
 		<isinclude template="splussearch/components/productsearchrefinebar"/>
 	</div>
