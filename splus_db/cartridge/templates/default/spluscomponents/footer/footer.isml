@@ -9,7 +9,7 @@
 <footer>
 	<div class="footer-container">
 		<div class="footer-item">
-			<isslot id="footer-column" description="Content in column 1 of the Footer" context="global" />
+			<isslot id="footer-column" description="Content in column 1 of the Footer" context="global" />sdfsdfsdfsdfsdfsdfsdf
 		</div>
 		<div class="footer-item">
 			<iscontentasset aid="footer-account"/>

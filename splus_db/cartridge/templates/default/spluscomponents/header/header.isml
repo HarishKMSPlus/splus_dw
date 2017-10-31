@@ -5,14 +5,7 @@
 	<isslot id="header-banner" description="Slot above the site header" context="global" />
 </div>
 <div class="top-banner" role="banner">
-<!-- 	<button class="menu-toggle"><i class="menu-icon fa fa-bars"></i><span class="visually-hidden">Menu</span></button>
-	<h1 class="primary-logo">
-		<a href="${URLUtils.url('Home-Show')}" title="${Resource.msgf('global.homepage.tooltip', 'locale', null, Resource.msg('global.storename', 'locale', null), Resource.msg('global.home', 'locale', null) )}">
-			<img src="${URLUtils.staticURL('/images/home.png')}" alt="Splus Commerce Cloud">
-			<span class="visually-hidden">Splus Commerce Cloud</span>
-		</a>
-	</h1> -->
-<img src="${URLUtils.staticURL('/images/slogo.jpeg')}" class="navImg" />
+<img src="${URLUtils.staticURL('/images/profile.png')}" class="navImg" />
 	<nav id="navigation" role="navigation">
 
 		<div class="header-search">
