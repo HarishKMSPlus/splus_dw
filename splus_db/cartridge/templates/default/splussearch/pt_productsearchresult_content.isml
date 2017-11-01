@@ -14,9 +14,9 @@
 	<div id="primary" class="primary-content">
 		<isreplace/>
 	</div>
-	******************************
+	
 	<div id="secondary" class="refinements">
 		<isinclude template="splussearch/components/productsearchrefinebar"/>
 	</div>
-	*******************************
+	
 </isdecorate>
