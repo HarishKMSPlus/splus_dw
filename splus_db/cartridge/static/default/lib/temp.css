@@ -145,7 +145,7 @@ top:95px;
 }
 a{
 text-decoration:none;
-color:#84bd00;
+color:#000;
 }
 
 a:hover { 
@@ -493,7 +493,7 @@ nav[role="navigation"] {
         display: block;
     }
     .level-2 a {
-        color: #84bd00;
+        color: #000;
     }
     .level-2 a:hover {
         text-decoration: underline;
@@ -551,7 +551,7 @@ nav[role="navigation"] {
         display: block;
     }
     .level-3 a {
-        color: #3d5700;
+        color: #000;
         font-weight: normal;
         font-size: 1em;
         padding: 0;
@@ -1666,6 +1666,7 @@ th {
   background-image: url(../lib/flag-icon-css/flags/4x3/io.svg); }
   .flag-icon-io.flag-icon-squared {
     background-image: url(../lib/flag-icon-css/flags/1x1/io.svg); }
+
 
 .flag-icon-iq {
   background-image: url(../lib/flag-icon-css/flags/4x3/iq.svg); }

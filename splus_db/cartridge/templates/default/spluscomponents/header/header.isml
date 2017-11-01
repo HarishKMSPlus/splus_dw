@@ -5,7 +5,9 @@
 	<isslot id="header-banner" description="Slot above the site header" context="global" />
 </div>
 <div class="top-banner" role="banner">
-<img src="${URLUtils.staticURL('/images/profile.png')}" class="navImg" />
+
+
+<img src="${URLUtils.staticURL('/images/splusicon.gif')}" class="navImg" />
 	<nav id="navigation" role="navigation">
 
 		<div class="header-search">

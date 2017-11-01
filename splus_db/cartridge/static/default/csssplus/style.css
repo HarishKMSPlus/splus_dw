@@ -1644,7 +1644,7 @@ body {
   font-size: 12px; }
 
 a {
-  color: #84bd00;
+  color: black;
   outline: medium none;
   overflow: hidden;
   text-decoration: none; }
@@ -1668,8 +1668,8 @@ button,
 .button,
 .buttonstyle,
 input[type="button"] {
-  background-color: #84bd00;
-  border-color: #608a00;
+  background-color: #000;
+  border-color: #000;
   border-radius: 2px;
   border-style: solid;
   border-width: 1px;
@@ -1692,9 +1692,9 @@ input[type="button"] {
   .button:hover,
   .buttonstyle:hover,
   input[type="button"]:hover {
-    background-color: #fff;
-    border-color: #84bd00;
-    color: #84bd00; }
+    background-color: #000;
+    border-color: #000;
+    color: #fff; }
   button.raised,
   .button.raised,
   .buttonstyle.raised,
@@ -2672,7 +2672,9 @@ div.error {
   .category-slot .catlanding-banner img,
   .product-slot .catlanding-banner img {
     height: auto;
-    width: 100%; }
+    width: 70%;
+    height: 400px; 
+    }
 
 .cart-recommendations .category-tile,
 .category-slot .category-tile,
@@ -3450,7 +3452,7 @@ h3 {
   margin: 0 0 10px; }
 
 #secondary a {
-  color: #84bd00; }
+  color: #000; }
 
 #category-level-1 li {
   color: #666;
@@ -3701,7 +3703,7 @@ footer {
     height: auto;
     position: relative; }
     .product-tile .product-image .quickview {
-      background-color: rgba(132, 189, 0, 0.8);
+      background-color: gray;
       color: #fff;
       display: none;
       width: 55%;

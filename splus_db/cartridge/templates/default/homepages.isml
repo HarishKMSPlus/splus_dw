@@ -3,7 +3,6 @@
 
 <link href="${URLUtils.staticURL('/lib/temp.css')}" type="text/css" rel="stylesheet"/>
 
-
     <isinclude template="spluscomponents/header/header"/>
     <isinclude template="spluscomponents/header/htmlhead_UI"/>
     <link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" type="text/css"/>
