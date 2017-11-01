@@ -250,10 +250,17 @@
 				</div><!--  end details block -->
 			</fieldset>
 				<fieldset>
-			<button>hello-1</button>
+			<button>hello-MPD</button>
+			${pdict.Product.ID}
+			
+            </form>
 		</fieldset>
 		</form>
+		<form action="${URLUtils.url('Test-Store','pid', pdict.Product.ID)}" method="post"  >
 
+	       <input class="show in store" type="submit" value="Show in Store" />
+  
+</form>
 	<iscomment>
 		product actions
 		=============================================================

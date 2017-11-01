@@ -1,0 +1,5 @@
+<!--- TEMPLATENAME: store.isml --->
+
+This is the store isml
+
+<h3>${pdict.message}</h3>
