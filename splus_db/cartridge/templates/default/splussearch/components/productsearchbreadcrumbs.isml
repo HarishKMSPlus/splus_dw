@@ -53,9 +53,9 @@
 				<span class="breadcrumb-result-text">${Resource.msg('searchbreadcrumbs.in','search',null)}</span>
 			</isif>
 			<isif condition="${psr.categorySearch}">
-				<isset name="catLinkUrl" value="${ProductSearchModel.urlForCategory('Search-Show', cat.ID)}" scope="page"/>
+				<isset name="catLinkUrl" value="${ProductSearchModel.urlForCategory('SplusSearch-Show', cat.ID)}" scope="page"/>
 			<iselse/>
-				<isset name="catLinkUrl" value="${ProductSearchModel.urlForCategory(URLUtils.url('Search-Show','q', psr.searchPhrase), cat.ID)}" scope="page"/>
+				<isset name="catLinkUrl" value="${ProductSearchModel.urlForCategory(URLUtils.url('SplusSearch-Show','q', psr.searchPhrase), cat.ID)}" scope="page"/>
 			</isif>
 			<a class="breadcrumb-element" href="${catLinkUrl}" title="${Resource.msg('global.breadcrumbs.label.prefix','locale',null)} ${cat.displayName}">${cat.displayName}</a>
 		</isloop>
@@ -108,9 +108,9 @@
 					</isif>
 
 					<isif condition="${empty(pagingModel)}">
-						<isset name="breadcrumbHref" value="${psr.urlRelaxPrice('Search-Show')}" scope="page" />
+						<isset name="breadcrumbHref" value="${psr.urlRelaxPrice('SplusSearch-Show')}" scope="page" />
 					<iselse/>
-						<isset name="breadcrumbHref" value="${pagingModel.appendPaging(psr.urlRelaxPrice('Search-Show'), 0)}" scope="page" />
+						<isset name="breadcrumbHref" value="${pagingModel.appendPaging(psr.urlRelaxPrice('SplusSearch-Show'), 0)}" scope="page" />
 					</isif>
 					<a class="breadcrumb-relax" href="${StringHelpers.unsanitizeOR(breadcrumbHref)}" title="${Resource.msg('global.remove', 'locale', null)}">x</a>
 				</span>

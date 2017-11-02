@@ -5,4 +5,4 @@
 	to include assets into a page.
 </iscomment>
 
-<isinclude url="${URLUtils.url('Page-Include', 'cid', pdict.aid)}"/>
+<isinclude url="${URLUtils.url('SplusPage-Include', 'cid', pdict.aid)}"/>

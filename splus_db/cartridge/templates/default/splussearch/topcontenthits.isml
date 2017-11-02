@@ -1,5 +1,5 @@
 <iscontent type="text/html" charset="UTF-8" compact="true"/>
-<isinclude template="util/modules"/>
+<isinclude template="splusutil/modules"/>
 <isif condition="${!empty(pdict.ContentSearchResult) && pdict.ContentSearchResult.count > 0}">
 
 	<iscomment>calculated correct index position to separate the result columns</iscomment>
@@ -34,7 +34,7 @@
 		</isloop>
 	</ul>
 	<isif condition="${pdict.ContentSearchResult.count>6}">
-		<form action="${pdict.ContentSearchResult.url('Search-ShowContent')}" method="get">
+		<form action="${pdict.ContentSearchResult.url('SplusSearch-ShowContent')}" method="get">
 			<div class="form-row" style="text-align:center;">
 				<button type="submit" value="${Resource.msgf('topcontenthits.viewall','search',null,pdict.ContentSearchResult.count.toFixed(0))}"><span>${Resource.msg('topcontenthits.viewall','search',null)} (${pdict.ContentSearchResult.count.toFixed(0)})</span></button>
 			</div>
