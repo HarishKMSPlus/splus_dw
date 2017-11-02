@@ -15,7 +15,6 @@
 		DecoratorTemplate = 'util/pt_empty';
 	}
 </isscript>
- <h1><font color="white">dxdxdxdxd</font></h1>
 <isdecorate template="${DecoratorTemplate}">
 	<isinclude url="${productDetailUrl}"/>
 </isdecorate>jb

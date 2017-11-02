@@ -105,9 +105,8 @@ height:300px;
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
 .w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 
-
 .categ{
-width:365;
+width:375px;
 height:330px;
 margin:1px;
 postion:relative;
