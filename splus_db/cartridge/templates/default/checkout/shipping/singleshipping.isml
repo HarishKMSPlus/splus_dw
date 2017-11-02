@@ -23,6 +23,7 @@
 
     <form action="${URLUtils.continueURL()}" method="post" id="${pdict.CurrentForms.singleshipping.shippingAddress.htmlName}" class="checkout-shipping address form-horizontal">
 
+
         <fieldset>
         <isif condition="${pdict.HomeDeliveries}">
                 <iscomment>shipping address area</iscomment>
@@ -97,6 +98,8 @@
                     <isinclude url="${URLUtils.https('COShipping-UpdateShippingMethodList')}"/>
                 </div>
         </isif>
+        
+      
         <fieldset>
 
             <isif condition="${dw.system.Site.getCurrent().getCustomPreferenceValue('enableStorePickUp')}">
@@ -112,8 +115,9 @@
             <iselse/>
                 <div class="form-row form-row-button">
             </isif>
-
+				
                 <button class="button-fancy-large" type="submit" name="${pdict.CurrentForms.singleshipping.shippingAddress.save.htmlName}" value="${Resource.msg('global.continuebilling','locale',null)}"><span>${Resource.msg('global.continuebilling','locale',null)}</span></button>
+                
             </div>
 
             <iscomment>Entry point for Multi-Shipping (disabled on purpose)</iscomment>
@@ -130,7 +134,7 @@
 
     </form>
 <isscript>
-    importScript("util/ViewHelpers.ds");
+    importScript("splusutil/ViewHelpers.ds");
     var addressForm = pdict.CurrentForms.singleshipping.shippingAddress.addressFields;
     var countries = ViewHelpers.getCountriesAndRegions(addressForm);
     var json = JSON.stringify(countries);

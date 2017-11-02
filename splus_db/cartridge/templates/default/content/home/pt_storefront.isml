@@ -15,10 +15,10 @@
 		pdict.showCountrySelector = true;
 	</isscript>
 	<isinclude template="util/modules"/>
-
+XXXXXXXXX
 	<iscomment>This page must be cachable. It inherits the caching attributes by the decorated template.</iscomment>
 
-	<isinclude template="components/header/htmlhead"/>
+	<isinclude template="spluscomponents/header/htmlhead"/>
 	<isinclude template="content/home/pt_storefront_UI"/>
 
 	<iscomment>Add page specific header information here.</iscomment>
@@ -27,14 +27,14 @@
 <body>
 	<div id="wrapper" class="pt_storefront">
 
-		<isinclude template="components/header/header"/>
+		<isinclude template="spluscomponents/header/header"/>
 
 		<div id="main" role="main">
 			<isreplace/>
-			<isinclude template="components/browsertoolscheck"/>
+			<isinclude template="spluscomponents/browsertoolscheck"/>
 		</div>
 
-		<isinclude template="components/footer/footer"/>
+		<isinclude template="spluscomponents/footer/footer"/>
 		<isinclude template="content/home/pt_storefront_VARS"/>
 
 	</div><!--  /wrapper -->

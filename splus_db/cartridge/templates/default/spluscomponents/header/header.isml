@@ -16,7 +16,7 @@
 		</div>
 	
 		<iscomment>INCLUDE: category menu</iscomment>
-		<isinclude url="${URLUtils.url('Home-IncludeHeaderMenu')}"/>
+		<isinclude url="${URLUtils.url('SplusHome-IncludeHeaderMenu')}"/>
 		<!--  utility user menu -->
 		<ul class="menu-utility-user">
 			
