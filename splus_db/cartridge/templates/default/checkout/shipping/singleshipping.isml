@@ -115,9 +115,10 @@
             <iselse/>
                 <div class="form-row form-row-button">
             </isif>
-				
+			*************SSS
+			${URLUtils.continueURL()}"
                 <button class="button-fancy-large" type="submit" name="${pdict.CurrentForms.singleshipping.shippingAddress.save.htmlName}" value="${Resource.msg('global.continuebilling','locale',null)}"><span>${Resource.msg('global.continuebilling','locale',null)}</span></button>
-                
+             *************   
             </div>
 
             <iscomment>Entry point for Multi-Shipping (disabled on purpose)</iscomment>

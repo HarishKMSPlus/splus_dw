@@ -5,7 +5,7 @@
 	to change the isinclude into a pipeline include for that).
 </iscomment>
 <isinclude template="util/modules"/>
-
+<!-- 
 <footer>
 	<div class="footer-container">
 		<div class="footer-item">
@@ -24,6 +24,11 @@
 </footer>
 
 <iscontentasset aid="footer-copy"/>	
+
+ -->
+ <div class="footer">
+    	<isinclude template="footer" />
+	</div>
 
 <iscomment>
 	Customer registration can happen everywhere in the page flow. As special tag in the pdict
