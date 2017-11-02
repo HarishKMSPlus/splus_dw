@@ -1748,7 +1748,7 @@ input[type="button"] {
 .button-text {
   background-color: transparent;
   border-width: 0;
-  color: #84bd00;
+  color: black;
   padding: 0; }
   .button-text:hover {
     background-color: transparent;
@@ -3203,7 +3203,7 @@ nav[role="navigation"] {
 .mini-cart-total {
   position: relative; }
   .mini-cart-total .mini-cart-link {
-    color: #84bd00;
+    color: white;
     text-transform: uppercase; }
     .mini-cart-total .mini-cart-link i {
       font-size: 3em; }
