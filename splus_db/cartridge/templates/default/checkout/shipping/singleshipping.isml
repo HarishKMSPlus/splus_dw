@@ -92,7 +92,7 @@
                     </isscript>
                     <isinputfield rowclass="gift-message-text" formfield="${pdict.CurrentForms.singleshipping.shippingAddress.giftMessage}" type="textarea" attributes="${attributes}"/>
 
-                </fieldset>
+                
 
                 <div id="shipping-method-list">
                     <isinclude url="${URLUtils.https('COShipping-UpdateShippingMethodList')}"/>
@@ -100,7 +100,7 @@
         </isif>
         
       
-        <fieldset>
+        
 
             <isif condition="${dw.system.Site.getCurrent().getCustomPreferenceValue('enableStorePickUp')}">
                 <isset name="instoreShipmentsExists" value="${false}" scope="page"/>
