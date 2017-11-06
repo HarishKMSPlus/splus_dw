@@ -96,7 +96,7 @@ function test() {
 	 var xhttp = new XMLHttpRequest();
 	 clearSelectList(document.getElementById("mySelect"));
 	 
-	 xhttp.open("GET", "http://localhost:8080/dwinteract/testController/"+${pdict.Product.ID}, false);
+	 xhttp.open("GET", "http://49.248.219.235/dwinteract/testController/"+${pdict.Product.ID}, false);
 	 xhttp.setRequestHeader("Content-type", "application/json");
 	 xhttp.send();
 	 //JSONObject result = JSONObject(xhttp.responseText);
