@@ -1748,7 +1748,7 @@ input[type="button"] {
 .button-text {
   background-color: transparent;
   border-width: 0;
-  color: black;
+  color: #84bd00;
   padding: 0; }
   .button-text:hover {
     background-color: transparent;
@@ -2066,7 +2066,7 @@ input[type="date"] textarea {
 
 select {
   background-color: #fff;
-  width: 100%;
+  width: 10%;
   height: 2rem; }
 
 input[type="checkbox"],
@@ -2896,7 +2896,7 @@ nav[role="navigation"] {
       .level-1 li:hover .level-2 {
         display: block; }
       .level-2 a {
-        color: #84bd00; }
+        color: #000; }
         .level-2 a:hover {
           text-decoration: underline; }
       .level-2 > ul {
@@ -2937,7 +2937,7 @@ nav[role="navigation"] {
     .level-3 {
       display: block; }
       .level-3 a {
-        color: #3d5700;
+        color: #000;
         font-weight: normal;
         font-size: 1em;
         padding: 0; }
@@ -3203,7 +3203,7 @@ nav[role="navigation"] {
 .mini-cart-total {
   position: relative; }
   .mini-cart-total .mini-cart-link {
-    color: white;
+    color: #84bd00;
     text-transform: uppercase; }
     .mini-cart-total .mini-cart-link i {
       font-size: 3em; }
@@ -6538,3 +6538,29 @@ h1 .account-logout {
   .pt_order-confirmation .header-banner,
   .pt_order-confirmation #navigation {
     display: none; } }
+
+.showinstore {
+    position: relative;
+    width: 164px;
+    height: 35px;
+    background: black;
+    font-size: 14px;
+}
+.showinstore1 {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    background: white;
+    font-size: 15px;
+    left: 10px;
+    }
+    
+.showinstore2{
+	    position: relative;
+    width: 128px;
+    height: -5px;
+    background: white;
+    font-size: 15px;
+    left: 350px;
+    top: -40px;
+}
