@@ -6,6 +6,19 @@
 </iscomment>
 <isinclude template="util/modules"/>
 
+<footer>
+<div class="footer-container">
+<div class="footer-item">
+			<iscontentasset aid="footer-account"/>
+		</div>
+		<div class="footer-item">
+			<iscontentasset aid="footer-support"/>
+		</div>
+		<div class="footer-container">
+		<div class="footer-item">
+			<isslot id="footer-column" description="Content in column 1 of the Footer" context="global" />
+</div>
+</footer>
 
 <iscomment>
 	Customer registration can happen everywhere in the page flow. As special tag in the pdict
