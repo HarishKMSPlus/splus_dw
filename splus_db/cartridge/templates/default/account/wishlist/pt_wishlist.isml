@@ -15,7 +15,7 @@
 	</isscript>
 	<isinclude template="util/modules"/>
 
-	<isinclude template="components/header/htmlhead"/>
+	<isinclude template="spluscomponents/header/htmlhead"/>
 	<isinclude template="account/wishlist/pt_wishlist_UI"/>
 
 </head>
@@ -23,7 +23,7 @@
 <body>
 	<div id="wrapper" class="pt_wish-list">
 
-		<isinclude template="components/header/header"/>
+		<isinclude template="spluscomponents/header/header"/>
 
 		<div id="main" role="main" class="page-content clearfix">
 
