@@ -1,0 +1,22 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<isdecorate template="account/wishlist/pt_wishlist">
+	<isinclude template="util/modules"/>
+	
+	Why should I sell on Flipkart?
+
+Flipkart is the leader in Indian e-commerce with maximum online reach and highest credibility. With more than 10 crore registered customers, 10 million daily page visits and 80 lakh shipments every month to over 1000 cities, we are the strongest partner to take your products to customers all over India
+Who can sell on Flipkart?
+
+Anyone selling new and genuine products is welcome. In order to start selling, you need to have the following:
+
+    GSTIN
+
+    PAN Card (Personal PAN for business type “Proprietorship” and Personal + Business PAN for business type as “Company”)
+    GSTIN/TIN Number (not mandatory for few categories)
+
+    Bank account and supporting KYC documents (Address Proof, and Cancelled cheque)
+    Minimum of 5 unique products to sell
+
+	
+	</isdecorate>
+	
