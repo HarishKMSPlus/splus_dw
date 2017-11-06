@@ -3580,7 +3580,8 @@ h3 {
   background-position: left -96px; }
 
 footer {
-  background-color: #84bd00;
+	    height: 50%;
+  background-color: #808080;
   clear: both;
   letter-spacing: 1px; }
 
@@ -3611,7 +3612,7 @@ footer {
     list-style: none !important; }
 
 .footer-container a {
-  color: #fff; }
+  color: #000; }
   .footer-container a:hover {
     color: #ccc;
     text-decoration: none; }
@@ -6563,4 +6564,10 @@ h1 .account-logout {
     font-size: 15px;
     left: 350px;
     top: -40px;
+}
+
+.footerItem {
+position: relative;
+top: -193px;
+left: 750px;
 }

@@ -5,7 +5,6 @@
 	to change the isinclude into a pipeline include for that).
 </iscomment>
 <isinclude template="util/modules"/>
-
 <footer>
 <div class="footer-container">
 <div class="footer-item">
@@ -14,10 +13,11 @@
 		<div class="footer-item">
 			<iscontentasset aid="footer-support"/>
 		</div>
-		<div class="footer-container">
-		<div class="footer-item">
+		<div class="footer-container"></div></div>
+		<div class="footerItem">
 			<isslot id="footer-column" description="Content in column 1 of the Footer" context="global" />
 </div>
+
 </footer>
 
 <iscomment>
