@@ -7443,7 +7443,7 @@ h1 .account-logout {
 .mini-cart-total {
   position: relative; }
   .mini-cart-total .mini-cart-link {
-    color: #84bd00;
+    color: white;
     text-transform: uppercase; }
     .mini-cart-total .mini-cart-link i {
       font-size: 3em; }
@@ -7461,7 +7461,7 @@ h1 .account-logout {
   color: #999;
   transition: color 500ms ease; }
   .mini-cart-total .mini-cart-empty:hover {
-    color: #84bd00;
+    color:white;
     text-decoration: none; }
   .mini-cart-total .mini-cart-empty .minicart-quantity {
     background-color: #fff;
