@@ -10,14 +10,14 @@
       </node>
       <simple-transition>
         <transition-display>
-          <bend-point relative-to="target" x="0" y="-1"/>
+          <bend-point relative-to="source" x="0" y="1"/>
         </transition-display>
       </simple-transition>
       <node>
         <interaction-node transaction-required="false">
           <template buffered="true" dynamic="false" name="paypal"/>
         </interaction-node>
-        <node-display x="0" y="2"/>
+        <node-display x="0" y="1"/>
       </node>
     </segment>
   </branch>

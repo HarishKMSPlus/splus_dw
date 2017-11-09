@@ -1,2 +1,36 @@
-<!--- TEMPLATENAME: paypal.isml --->
-mytest for paypal
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<html>
+<head>
+<title>Index page</title>
+<script type="text/javascript" src="https://www.paypalobjects.com/api/checkout.js"></script>
+</head> 
+
+
+<body onload="loadPayPalBtn()">
+
+</body>
+</html>
+
+<script>
+function loadPayPalBtn() {
+  paypal.Button.render({
+      env: 'sandbox',
+      client:{sandbox:'AaCgkTtBx3Dy8W18Ep-XSS0zEiFcTxfs9TjZM9dnxP_mtAio-cDG4JM71wgMCM5sgrCs0iUp-zeuY1i0'},
+      commit: true,
+      payment: function(data,actions) {return actions.payment.create(
+      		{transactions:[{
+      			amount : { total : '1.00', currency : 'USD' }
+      		}
+      		               ]}
+      		)},
+      onAuthorize: function(data, actions){
+      	
+      	return actions.payment.execute().then(
+      			function(payment){
+      				window.alert("Payment done successfully!!!!!!");
+      			}
+      			)
+      }});
+
+}
+</script>
