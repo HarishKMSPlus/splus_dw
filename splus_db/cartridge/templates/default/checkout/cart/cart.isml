@@ -1,32 +1,6 @@
 <iscontent type="text/html" charset="UTF-8" compact="true" />
 <script class="hello" type="text/javascript" src="https://www.paypalobjects.com/api/checkout.js"></script>
-<link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" type="text/css"/>
-<body class="hello" onload="loadPayPalBtn()"></body>
-<script>
-document.getElementById("paypal-button-container").style.color = "blue";
-function loadPayPalBtn() {
-	
-  paypal.Button.render({
-      env: 'sandbox',
-      client:{sandbox:'AaCgkTtBx3Dy8W18Ep-XSS0zEiFcTxfs9TjZM9dnxP_mtAio-cDG4JM71wgMCM5sgrCs0iUp-zeuY1i0'},
-      commit: true,
-      payment: function(data,actions) {return actions.payment.create(
-      		{transactions:[{
-      			amount : { total : '1.00', currency : 'USD' }
-      		}
-      		               ]}
-      		)},
-      onAuthorize: function(data, actions){
-      	
-      	return actions.payment.execute().then(
-      			function(payment){
-      				window.alert("Payment done successfully!!!!!!");
-      			}
-      			)
-      }});
 
-}
-</script>
 <isdecorate template="checkout/cart/pt_cart">
 	<isinclude template="util/modules" />
 	<isinclude template="util/reporting/ReportBasket.isml" />
@@ -860,7 +834,40 @@ function test() {
 					<input type="hidden" name="${pdict.CurrentForms.cart.updateCart.htmlName}" value="${pdict.CurrentForms.cart.updateCart.htmlName}"/>
 					<div class="cart-order-totals">
 						<isordertotals p_lineitemctnr="${pdict.Basket}" p_totallabel="${Resource.msg('global.estimatedtotal','locale',null)}" />
+						<input value="${orderTotalValue}" id="testValue" type="hidden">
 					</div>
+					<link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" type="text/css"/>
+<body class="hello" onload="loadPayPalBtn()"></body>
+<script>
+document.getElementById("paypal-button-container").style.color = "blue";
+
+
+function loadPayPalBtn() {
+	var xx = document.getElementById("testValue").value;	
+	var intValue = parseInt(xx.match(/[0-9]+/)[0], 10);
+  paypal.Button.render({
+      env: 'sandbox',
+      client:{sandbox:'AaCgkTtBx3Dy8W18Ep-XSS0zEiFcTxfs9TjZM9dnxP_mtAio-cDG4JM71wgMCM5sgrCs0iUp-zeuY1i0'},
+      commit: true,
+      payment: function(data,actions) {
+    	  
+    	  return actions.payment.create(
+      		{transactions:[{
+      			amount : { total : intValue, currency : 'USD' }
+      		}
+      		               ]}
+      		)},
+      onAuthorize: function(data, actions){
+      	
+      	return actions.payment.execute().then(
+      			function(payment){
+      				window.alert("Payment done successfully!!!!!!");
+      			}
+      			)
+      }});
+
+}
+</script>
 					<div class="cart-coupon-code">
 
 						<input type="text" name="${pdict.CurrentForms.cart.couponCode.htmlName}" id="${pdict.CurrentForms.cart.couponCode.htmlName}" placeholder="${Resource.msg('cart.entercouponcode','checkout',null)}" />
