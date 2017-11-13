@@ -1,7 +1,7 @@
 <iscontent type="text/html" charset="UTF-8" compact="true" />
 <script class="hello" type="text/javascript" src="https://www.paypalobjects.com/api/checkout.js"></script>
 
-<isdecorate template="checkout/cart/pt_cart">
+ <isdecorate template="checkout/cart/pt_cart"> 
 	<isinclude template="util/modules" />
 	<isinclude template="util/reporting/ReportBasket.isml" />
 
@@ -24,23 +24,8 @@
 			<isslot id="cart-empty" description="Empty Cart page slot." context="global" />
 		</div>
 	<iselse/>
-	
-<script>
-function test() {
-	
-	 var xhttp = new XMLHttpRequest();
-	 xhttp.open("GET", "http://49.248.219.235/dwinteract/testController/25502038", false);
-	 xhttp.setRequestHeader("Content-type", "application/json");
-	 xhttp.send();
-	 alert("hello"+xhttp.responseText);
-}
-</script>
 		<iscomment>show checkout and continue shopping buttons above cart</iscomment>
 		<div class="cart-actions cart-actions-top">
-		<!-- <p id="demo"></p>
-				<form method="post" action="${URLUtils.url('PayPal-Pay')}" name="${pdict.CurrentForms.cart.dynamicHtmlName}" id="checkout-form">
-				<button type="submit" class="apibutton" >API CHECK</button>
-				</form> -->
 			<iscomment>continue shop url is a non-secure but checkout needs a secure and that is why separate forms!</iscomment>
 			<form class="cart-action-checkout" action="${URLUtils.httpsContinue()}" method="post" name="${pdict.CurrentForms.cart.dynamicHtmlName}" id="checkout-form">
 				<fieldset>
@@ -92,7 +77,7 @@ function test() {
 		</isif>
 
 		<iscomment>show the basket when we have data</iscomment>
-		<form action="${URLUtils.httpContinue()}" method="post"	name="${pdict.CurrentForms.cart.htmlName}" id="cart-items-form">
+		<form action="${URLUtils.url('PayPal-Start')}" method="post" name="${pdict.CurrentForms.cart.htmlName}" id="cart-items-form">
 			<fieldset>
 				<iscomment>This button is hidden but required to ensure that update cart is called whenever the "enter" key is pressed in an input field</iscomment>
 				<button class="visually-hidden" type="submit" value="${pdict.CurrentForms.cart.updateCart.htmlName}" name="${pdict.CurrentForms.cart.updateCart.htmlName}"></button>
@@ -836,38 +821,7 @@ function test() {
 						<isordertotals p_lineitemctnr="${pdict.Basket}" p_totallabel="${Resource.msg('global.estimatedtotal','locale',null)}" />
 						<input value="${orderTotalValue}" id="testValue" type="hidden">
 					</div>
-					<link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" type="text/css"/>
-<body class="hello" onload="loadPayPalBtn()"></body>
-<script>
-document.getElementById("paypal-button-container").style.color = "blue";
 
-
-function loadPayPalBtn() {
-	var xx = document.getElementById("testValue").value;	
-	var intValue = parseInt(xx.match(/[0-9]+/)[0], 10);
-  paypal.Button.render({
-      env: 'sandbox',
-      client:{sandbox:'AaCgkTtBx3Dy8W18Ep-XSS0zEiFcTxfs9TjZM9dnxP_mtAio-cDG4JM71wgMCM5sgrCs0iUp-zeuY1i0'},
-      commit: true,
-      payment: function(data,actions) {
-    	  
-    	  return actions.payment.create(
-      		{transactions:[{
-      			amount : { total : intValue, currency : 'USD' }
-      		}
-      		               ]}
-      		)},
-      onAuthorize: function(data, actions){
-      	
-      	return actions.payment.execute().then(
-      			function(payment){
-      				window.alert("Payment done successfully!!!!!!");
-      			}
-      			)
-      }});
-
-}
-</script>
 					<div class="cart-coupon-code">
 
 						<input type="text" name="${pdict.CurrentForms.cart.couponCode.htmlName}" id="${pdict.CurrentForms.cart.couponCode.htmlName}" placeholder="${Resource.msg('cart.entercouponcode','checkout',null)}" />
@@ -900,7 +854,6 @@ function loadPayPalBtn() {
 
 			</fieldset>
 		</form>
-
 		<div class="cart-actions">
 
 			<iscomment>continue shop url is a non-secure but checkout needs a secure and that is why separate forms!</iscomment>
@@ -935,4 +888,37 @@ function loadPayPalBtn() {
 		</div>
 	</isif>
 
-</isdecorate>
+ </isdecorate>
+<form action="" method="post">
+<link rel="stylesheet" href="${URLUtils.staticURL('/csssplus/style.css')}" type="text/css"/>
+<body class="hello" onload="loadPayPalBtn()"></body>
+<script>
+
+function loadPayPalBtn() {
+	var xx = document.getElementById("testValue").value;	
+	var intValue = parseInt(xx.match(/[0-9]+/)[0], 10);
+  paypal.Button.render({
+      env: 'sandbox',
+      client:{sandbox:'AaCgkTtBx3Dy8W18Ep-XSS0zEiFcTxfs9TjZM9dnxP_mtAio-cDG4JM71wgMCM5sgrCs0iUp-zeuY1i0'},
+      commit: true,
+      payment: function(data,actions) {
+    	  
+    	  return actions.payment.create(
+      		{transactions:[{
+      			amount : { total : intValue, currency : 'USD' }
+      		}
+      		               ]}
+      		)},
+      onAuthorize: function(data, actions){
+      	
+      	return actions.payment.execute().then(
+      			function(payment){
+      				//window.alert("Payment done successfully!!!!!!");
+      				window.location.href = "${URLUtils.url('PayPal-Start')}";
+      			}
+      			)
+      }});
+
+}
+</script>
+</form>
