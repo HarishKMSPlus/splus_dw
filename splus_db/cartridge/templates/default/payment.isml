@@ -25,13 +25,17 @@
 <script>
 
 function callAPI() {
-
-	 var xhttp = new XMLHttpRequest();
-	 xhttp.open("GET", "http://localhost:8080/dwinteract/pay", false);
-	 xhttp.setRequestHeader("Content-type", "application/json");
-	 xhttp.send();
-	 var x = JSON.parse(xhttp.responseText);
-	 alert(x);
+	 
+		URL = "http://localhost:8080/dwinteract/pay";
+	
+	    var xmlhttp = new XMLHttpRequest();
+	    xmlhttp.open("GET", URL, false);
+	    xmlhttp.setRequestHeader("Content-Type", "application/json");
+	    xmlhttp.setRequestHeader('Authorization', 'Basic ' + window.btoa('mpddemandware@gmail.com:Passw0rd!23')); 
+	    xmlhttp.send();
+	    alert(xmlhttp.responseText);
+	    document.getElementById("div").innerHTML = xmlhttp.statusText + ":" + xmlhttp.status + "<BR><textarea rows='100' cols='100'>" + xmlhttp.responseText + "</textarea>";
+	
 }
 </script>
 

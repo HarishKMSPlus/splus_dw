@@ -12,40 +12,31 @@
 *
 * For example:
 *
-*   @input ProductID : String
-*   @output Product : Object
-*   @output MyProductID : String
+*   @input basket : Object
+*   @output basketx : Object
 *
 */
 
 importPackage( dw.util );
 importPackage( dw.system );
 importPackage( dw.catalog );
+importPackage( dw.order);
 
-function execute( args : PipelineDictionary ) : Number
+function execute( pdict : PipelineDictionary ) : Number
 {
-
-    // require scripts or system libs here 
-     var logger = require('dw/system/Logger');
-
-    // read pipeline dictionary input parameter
-    // ... = args.ExampleIn;
-
-    // insert business logic here
-
-    // write pipeline dictionary output parameter
-
-    // args.ExampleOut = ...
-    args.Product=ProductMgr.getProduct(args.ProductID);
-    args.MyProductID=args.ProductID;
-    if(args.Product==null){
-		logger.debug("test");
-	}
-	else
-	{
-		logger.debug("test----not null");
-		
-	}
-
+	var test="1";
+	
+	removeProductLineItem(pdict.basket);
+	pdict.basketx = pdict.basket;
+	
    return PIPELET_NEXT;
+}
+
+function removeProductLineItem(basket : dw.order.Basket) : void
+{	
+	for each(var productLineItem in basket.getProductLineItems())
+	{
+		basket.removeProductLineItem(productLineItem);
+	}
+ 		 return PIPELET_NEXT;
 }
