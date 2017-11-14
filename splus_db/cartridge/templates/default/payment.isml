@@ -1,0 +1,43 @@
+ <html>
+<body>
+
+<p id="demo"></p>
+<form>
+  <fieldset>
+    <legend>Payment information:</legend>
+    Name:<br>
+    <input type="text" name="username" >
+    <br>
+    Payment Method:<br>
+    <select> 
+    <option value="creditcards">Credit Cards</option> 
+    <option value="Digital Wallets">Digital Wallets </option> 
+    <option value="E-cash">E-cash</option> 
+    <option value="Mobile Payment">Mobile Payment</option> 
+     </select>
+    <br><br>
+   <button type="button" onclick="callAPI()">Online Payment</button>
+  </fieldset>
+</form>
+
+
+
+<script>
+
+function callAPI() {
+
+	 var xhttp = new XMLHttpRequest();
+	 xhttp.open("GET", "http://localhost:8080/dwinteract/pay", false);
+	 xhttp.setRequestHeader("Content-type", "application/json");
+	 xhttp.send();
+	 var x = JSON.parse(xhttp.responseText);
+	 alert(x);
+}
+</script>
+
+</body>
+</html>  
+
+
+
+
