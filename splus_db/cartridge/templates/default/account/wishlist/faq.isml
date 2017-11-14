@@ -1,0 +1,69 @@
+
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<html>
+<head>
+<title>FAQ's</title>
+</head>
+<body>
+	<link href="${URLUtils.staticURL('/lib/faq.css')}" type="text/css"
+		rel="stylesheet" />
+		<br>
+	<div class="faq_heading"><br>
+		<h1>Customer Question and Answer</h1>
+	</div>
+	<div class="center">
+	<div class="faq_QA">
+		<div class="faq_ques"><h2><b>Question:</b></h2>How can I purchase form Gift Card?</div>
+		<div class="faq_ans"> <h2><b>Answer:</b></h2>
+			<ul>
+				<li>"Enter the name and email address of the person you want to
+					send the Flipkart Gift Card to."</li>
+				<li>"Enter the value of the Gift Card you would like to
+					purchase then click 'Proceed To Pay'."</li>
+				<li>"You'll now see the payment options. You can pay by Credit
+					Card / Debit Card / ATM Card / Netbanking. Proceed to pay using
+					your preferred choice. If you need to make any changes to the Gift
+					Card value, you can always click 'Edit' to modify it."</li>
+			</ul>
+		</div>
+		<div class="faq_ques"><h2><b>Question:</b></h2>How do I know shopping is secure?</div>
+		<div class="faq_ans"> <h2><b>Answer:</b></h2>
+			We implement many layers of safeguards to protect your security and privacy. 
+			Our site has security measures in place to protect against the loss, 
+			misuse and alteration of the information under our control.
+			 All transmissions that include personally identifiable information are protected using the industry standard SSL (secure socket layer) protocol encryption technology to protect against information loss and assure a secure and trusted experience. 
+			 In addition, we utilize other physical and contractual practices and policies to safeguard your information. However, it is important to know that no online data transmission can be guaranteed to be 100% secure.
+	</div>
+<br>
+<br>
+<br>
+<div class="faq_query">If you have any question you can ask us</div>
+	<br>
+	<div class="faq_container">
+		<form>
+			<label for="fname">First Name</label> <input type="text" id="fname"
+				name="firstname" placeholder="Your name.."> <label
+				for="lname">Last Name</label> <input type="text" id="lname"
+				name="lastname" placeholder="Your last name.."> <label
+				for="Country">Country</label> <select id="country" name="country">
+				<option >select country</option>
+				<option value="au">Australia</option>
+				<option value="ca">Canada</option>
+				<option value="usa">USA</option>
+			</select> <label for="question">Question</label>
+			<textarea>Some text...</textarea>
+			<br> <br> <input type="submit" value="Submit">
+		</form>
+	</div>
+
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+

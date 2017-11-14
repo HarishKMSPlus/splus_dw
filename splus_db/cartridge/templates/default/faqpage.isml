@@ -1,0 +1,26 @@
+ <iscontent type="text/html" charset="UTF-8" compact="true"/>
+ <!doctype html>
+<head>
+	<isinclude template="splusutil/modules"/>
+	<isinclude template="spluscomponents/header/htmlhead"/>
+<isinclude template="account/wishlist/pt_faq_UI"/>
+</head>
+<body>
+	<div id="wrapper" class="pt_wish-list">
+
+		<isinclude template="spluscomponents/header/header"/>
+
+		<div id="main" role="main" class="page-content clearfix">
+		
+			<div id="primary" class="primary-content">
+				
+			</div>
+				<isinclude template="account/wishlist/faq"/>
+			</div>
+	<isinclude template="spluscomponents/footer/footer"/>
+	<isinclude template="account/wishlist/pt_faq_VARS"/>
+
+	</div>
+
+</body>
+</html>

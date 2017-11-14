@@ -2,6 +2,41 @@
 <?demandware-pipeline version="2.0"?>
 
 <pipeline type="view">
+  <branch basename="Practice">
+    <segment>
+      <node>
+        <start-node name="Practice" secure="false"/>
+        <node-display x="2" y="0"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="source" x="0" y="1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
+        <pipelet-node pipelet-name="Script" pipelet-set-identifier="bc_api">
+          <config-property key="Transactional" value="false"/>
+          <config-property key="OnError" value="PIPELET_ERROR"/>
+          <config-property key="ScriptFile" value="practicescript.ds"/>
+          <key-binding alias="null" key="ScriptLog"/>
+          <key-binding alias="quesans" key="quesans"/>
+          <key-binding alias="Output1" key="Output1"/>
+        </pipelet-node>
+        <node-display x="0" y="1"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="source" x="0" y="1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
+        <interaction-node transaction-required="false">
+          <template buffered="true" dynamic="false" name="practicefaq"/>
+        </interaction-node>
+        <node-display x="0" y="1"/>
+      </node>
+    </segment>
+  </branch>
   <branch basename="Mpd">
     <segment>
       <node>
@@ -29,14 +64,14 @@
       </node>
       <simple-transition>
         <transition-display>
-          <bend-point relative-to="source" x="0" y="2"/>
+          <bend-point relative-to="source" x="0" y="1"/>
         </transition-display>
       </simple-transition>
       <node>
         <interaction-node transaction-required="false">
           <template buffered="true" dynamic="false" name="homepages"/>
         </interaction-node>
-        <node-display x="0" y="2"/>
+        <node-display x="0" y="1"/>
       </node>
     </segment>
   </branch>
@@ -133,6 +168,25 @@
       </node>
     </segment>
   </branch>
+  <branch basename="Faq">
+    <segment>
+      <node>
+        <start-node name="Faq" secure="false"/>
+        <node-display x="5" y="0"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="source" x="0" y="1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
+        <interaction-node transaction-required="false">
+          <template buffered="true" dynamic="false" name="faqpage"/>
+        </interaction-node>
+        <node-display x="0" y="1"/>
+      </node>
+    </segment>
+  </branch>
   <branch basename="Women">
     <segment>
       <node>
@@ -189,6 +243,44 @@
       <node>
         <interaction-node transaction-required="false">
           <template buffered="true" dynamic="false" name="spluscomponents/header/headermenu"/>
+        </interaction-node>
+        <node-display x="0" y="1"/>
+      </node>
+    </segment>
+  </branch>
+  <branch basename="FaqPage">
+    <segment>
+      <node>
+        <start-node name="FaqPage" secure="false"/>
+        <node-display x="1" y="4"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="source" x="0" y="1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
+        <interaction-node transaction-required="false">
+          <template buffered="true" dynamic="false" name="splusfaq/faqlanding"/>
+        </interaction-node>
+        <node-display x="0" y="1"/>
+      </node>
+    </segment>
+  </branch>
+  <branch basename="Hello">
+    <segment>
+      <node>
+        <start-node name="Hello" secure="false"/>
+        <node-display x="0" y="5"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="source" x="0" y="1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
+        <interaction-node transaction-required="false">
+          <template buffered="true" dynamic="false" name="splusfaq/faqlanding"/>
         </interaction-node>
         <node-display x="0" y="1"/>
       </node>
